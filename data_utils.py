@@ -411,7 +411,7 @@ def load_filepaths_and_text_nepali(filename):
             parts = line.strip().split('|')
             if len(parts) == 3:
                 audiopath, sid, text = parts
-                audiopath = f"data/{audiopath}"
+                audiopath = f"/kaggle/input/datasets/sahadevchaulagain25/major-project-news-anchor/news_anchor/{audiopath}"
                 filepaths_and_text.append([audiopath, sid, text])
             else:
                 print(f"Warning: Skipping invalid line: {line.strip()}")
